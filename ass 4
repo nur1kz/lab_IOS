@@ -1,5 +1,4 @@
-// Randomizer Console Version 🌟
-// Shows a random favorite animal
+//animal
 
 import Foundation
 
@@ -28,11 +27,11 @@ func randomize() {
     }
 }
 
-print("Welcome to Randomizer Console Edition!")
+print("Welcome to Randomizer!")
 print("Press Enter to see a random favorite, or type 'exit' to quit.")
 
 while true {
-    print("\n👉 Randomize?", terminator: " ")
+    print("\n Random animal?", terminator: " ")
     if let input = readLine(), input.lowercased() == "exit" {
         print("Goodbye! 👋")
         break
