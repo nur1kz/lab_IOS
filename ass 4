@@ -1,0 +1,42 @@
+// Randomizer Console Version 🌟
+// Shows a random favorite animal
+
+import Foundation
+
+struct FavoriteItem {
+    let title: String
+    let description: String
+}
+
+let favorites = [
+    FavoriteItem(title: "Panda", description: "Loves bamboo and naps."),
+    FavoriteItem(title: "Lion", description: "The king of the jungle."),
+    FavoriteItem(title: "Dolphin", description: "Smart and playful."),
+    FavoriteItem(title: "Fox", description: "Clever and quick."),
+    FavoriteItem(title: "Koala", description: "Always chilling in eucalyptus trees."),
+    FavoriteItem(title: "Elephant", description: "Strong and kind-hearted."),
+    FavoriteItem(title: "Penguin", description: "Waddles but can swim fast!"),
+    FavoriteItem(title: "Tiger", description: "Powerful and graceful."),
+    FavoriteItem(title: "Rabbit", description: "Fast and fluffy."),
+    FavoriteItem(title: "Giraffe", description: "Tall and elegant.")
+]
+
+func randomize() {
+    if let item = favorites.randomElement() {
+        print("🐾 Random Pick: \(item.title)")
+        print("   Description: \(item.description)\n")
+    }
+}
+
+print("Welcome to Randomizer Console Edition!")
+print("Press Enter to see a random favorite, or type 'exit' to quit.")
+
+while true {
+    print("\n👉 Randomize?", terminator: " ")
+    if let input = readLine(), input.lowercased() == "exit" {
+        print("Goodbye! 👋")
+        break
+    }
+    randomize()
+}
+
