@@ -1,1 +1,0 @@
-(см. код проекта ShoppingCartAssignment_Project выше — с Product.swift, CartItem.swift, ShoppingCart.swift, Address.swift, Order.swift, User.swift, Tests.swift и README.md)
