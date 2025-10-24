@@ -22,8 +22,8 @@ let favorites = [
 
 func randomize() {
     if let item = favorites.randomElement() {
-        print("🐾 Random Pick: \(item.title)")
-        print("   Description: \(item.description)\n")
+        print(" Random Pick: \(item.title)")
+        print(" Description: \(item.description)\n")
     }
 }
 
